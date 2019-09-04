@@ -28,7 +28,7 @@ if (function_exists('t_dump') === false) {
                 $text = '<pre>' . var_export($text, true) . '</pre>';
             }
 
-            $url = '//api.telegram.org/bot' . $token . '/sendMessage?chat_id=' . $chat_id . '&parse_mode=html';
+            $url = 'https://api.telegram.org/bot' . $token . '/sendMessage?chat_id=' . $chat_id . '&parse_mode=html';
 
             $ch = curl_init();
 
