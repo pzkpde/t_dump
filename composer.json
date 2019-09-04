@@ -9,5 +9,8 @@
             "email": "pzkpde@bk.ru"
         }
     ],
-    "require": {}
+    "require": {},
+    "files": [
+        "t_dump.php"
+    ]
 }
