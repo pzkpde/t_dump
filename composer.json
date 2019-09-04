@@ -10,7 +10,9 @@
         }
     ],
     "require": {},
-    "files": [
-        "t_dump.php"
-    ]
+    "autoload": {
+        "files": [
+            "t_dump.php"
+        ]
+    }
 }
