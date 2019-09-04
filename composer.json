@@ -1,0 +1,13 @@
+{
+    "name": "pzkpde/t_dump",
+    "description": "Dumping variables directly in Telegram",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pzkpde",
+            "email": "pzkpde@bk.ru"
+        }
+    ],
+    "require": {}
+}
