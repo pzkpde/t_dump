@@ -3,12 +3,14 @@
 if (function_exists('t_dump') === false) {
     function t_dump($text) {
 
-        $display_errors = getenv('T_DUMP_DISPLAY_ERRORS');
+        $use_config = function_exists('config');
+
+        $display_errors = $use_config ? config('plugins.t_dump.display_errors') : getenv('T_DUMP_DISPLAY_ERRORS');
 
         try {
 
-            $chat_id = getenv('T_DUMP_CHAT_ID');
-            $token = getenv('T_DUMP_TOKEN');
+            $chat_id = $use_config ? config('plugins.t_dump.chat_id') : getenv('T_DUMP_CHAT_ID');
+            $token = $use_config ? config('plugins.t_dump.token') : getenv('T_DUMP_TOKEN');
 
             if (strlen($chat_id) > 0 === false) {
                 if ($display_errors) {
