@@ -1,8 +1,11 @@
 # t_dump
 Dumping variables directly in Telegram
 
-Installing:
+**Installing:**
+
 ```composer require pzkpde/t_dump @dev```
+
+**Configuring:**
 
 You need to specify some variables in the environment (in any way):
 
@@ -26,3 +29,16 @@ return [
     ],
 ];
 ```
+
+**Using:**
+
+* ```t_dump([1,2,3]);```
+* ```t_dump('some_text');```
+* ```t_log('some_text');```
+* ```t_dd('some_text');```
+
+etc
+
+**License:**
+
+Licensed under the MIT License
