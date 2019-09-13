@@ -1,6 +1,9 @@
 # t_dump
 Dumping variables directly in Telegram
 
+Installing:
+```composer require pzkpde/t_dump @dev```
+
 You need to specify some variables in the environment (in any way):
 
 * `T_DUMP_CHAT_ID` - Your telegram chat ID with your bot
