@@ -57,6 +57,11 @@ if (function_exists('t_notify') === false) {
     function t_notify($text) {
 
         $use_config = function_exists('config');
+        if ($use_config) {
+            $text = empty(config('app.env'))
+                ? $text
+                : config('app.env') . ' ' . $text;
+        }
 
         $chat_id = $use_config ? config('plugins.t_notify.chat_id') : getenv('T_NOTIFY_CHAT_ID');
         $token = $use_config ? config('plugins.t_notify.token') : getenv('T_NOTIFY_TOKEN');
